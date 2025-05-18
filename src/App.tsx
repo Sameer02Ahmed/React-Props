@@ -17,13 +17,16 @@ import Carlist from "./Components/Child"
 import Mehran from "../src/assets/mehran.jpeg"
 import Wagon from "../src/assets/wagon.png"
 import Swift from "../src/assets/swift.webp"
+import Every from "../src/assets/every.webp"
+import Alto from "../src/assets/alto.jpeg"
+import "../src/App.css"
 
 const Cart = () => {
   return(
-    <div>
       <section>
-        <h1>Car List</h1>
-        <div>
+          <h1>Car List</h1>
+        <div className="itemlist">
+        <div className="item">
            <Carlist item={{
             car : "Mehran",
             image : Mehran, 
@@ -32,7 +35,7 @@ const Cart = () => {
            }}
            />
            </div>
-           <div>
+           <div className="item">
             <Carlist item={{
             car : "Wagon R",
             image : Wagon, 
@@ -41,7 +44,7 @@ const Cart = () => {
            }}
            />
            </div>
-           <div>
+           <div className="item">
             <Carlist item={{
             car : "Swift",
             image : Swift, 
@@ -50,8 +53,26 @@ const Cart = () => {
            }}
            />
            </div>
+           <div className="item">
+            <Carlist item={{
+            car : "Every",
+            image : Every, 
+            model : 2025,
+            price : 3400000,
+           }}
+           />
+           </div>
+           <div className="item">
+            <Carlist item={{
+            car : "Alto",
+            image : Alto, 
+            model : 2024,
+            price : 2900000,
+           }}
+           />
+           </div>
+           </div>
       </section>
-    </div>
   )
 }
 

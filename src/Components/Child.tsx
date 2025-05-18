@@ -1,3 +1,4 @@
+import "../App.css"
 type Props = {
     item : {
         car : string;
@@ -10,10 +11,10 @@ type Props = {
 const Carlist = (props: Props) => {
     return(
         <>
-    <h1>{props.item.car}</h1>
+    <h2 className="font-semibold text-xl">{props.item.car}</h2>
     <img src={props.item.image} width="200" height="200"/>
-    <h3>Model: {props.item.model}</h3>
-    <p>Price: PKR: {props.item.price}</p>
+    <h3 className="font-medium text-base">Model: {props.item.model}</h3>
+    <p className="text-base font-medium">Price: PKR: {props.item.price}</p>
     </>
     )
 }
